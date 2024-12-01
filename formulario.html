@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Formulario de Información</h1>
+    </header>
+    <main>
+        <form action="formulario.php" method="post">
+            <label>
+                Nombre y Apellidos:
+                <input type="text" name="nom-mp" maxlength="50" placeholder="Mamá o Papá" required>
+            </label>
+
+            <label>
+                Nombre y Apellidos:
+                <input type="text" name="nom-hij" maxlength="50" placeholder="Niña/o" required>
+            </label>
+
+            <label>
+                Correo Electrónico:
+                <input type="email" id="email" name="email" required>
+            </label>
+
+            <label>
+                Contraseña:
+                <input type="password" id="password" name="password" maxlength="8" required>
+            </label>
+
+            <label>
+                Edad del niño/a:
+                <input type="number" id="edad" name="edad" min="0" max="18">
+            </label>
+
+            <label>
+                Nacionalidad:
+                <select id="nacionalidad" name="nacionalidad">
+                    <option value="esp" selected>Española</option>
+                    <option value="ue">Unión Europea</option>
+                    <option value="noue">Fuera de la UE</option>
+                </select>
+            </label>
+
+            <fieldset>
+                <legend>Actividades:</legend>
+                <label>
+                    <input type="radio" id="activ" name="act" value="T"> Taller de Manualidades
+                </label>
+                <label>
+                    <input type="radio" id="activ" name="act" value="C"> Cuentacuentos Interactivo
+                </label>
+                <label>
+                    <input type="radio" id="activ" name="act" value="J"> Juegos en Grupo
+                </label>
+                <label>
+                    <input type="radio" id="activ" name="act" value="M"> Minitorneo Deportivo
+                </label>
+                <label>
+                    <input type="radio" id="activ" name="act" value="P"> Pintura Creativa
+                </label>
+            </fieldset>
+
+            <label>
+                <input type="checkbox" id="info" name="info" checked> Deseo recibir información adicional
+            </label>
+
+            <label>
+                <input type="submit" id="enviar" value="Enviar">
+            </label>
+
+            <label>
+                <input type="reset" id="reiniciar" value="Reiniciar">
+            </label>
+        </form>
+
+        <a href="index.html" id="volver">Volver a Inicio</a>
+    </main>
+</body>
+
+</html>
